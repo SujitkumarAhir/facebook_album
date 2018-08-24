@@ -1,0 +1,93 @@
+<html>
+<head>
+	<link href="/public_html/css/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+	<link href="/public_html/css/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script> -->
+	<link href="/public/css/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- start plugins -->
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+	<!--<script type="text/javascript" src="/public_html/js/bootstrap.js"></script>-->
+	<!--<script type="text/javascript" src="/public_html/js/bootstrap.min.js"></script>-->
+	<!-- start slider -->
+	<!-- <link href="../../public/css/css/slider.css" rel="stylesheet" type="text/css" media="all" /> -->
+	<!-- <script type="text/javascript" src="js/jquery.cslider.js"></script> -->
+	<script type="text/javascript">
+	
+    function selectAll() {
+        var items = document.getElementsByClassName('profile_Albums');
+        for (var i = 0; i < items.length; i++){
+            if (items[i].type == 'checkbox')
+                items[i].checked = true;
+        }
+    }
+
+    function UnSelectAll() {
+        var items = document.getElementsByClassName('profile_Albums');
+        for (var i = 0; i < items.length; i++){
+            if (items[i].type == 'checkbox')
+            	items[i].checked = false;
+        }
+    }			
+
+	function selectAll1() {	
+        var items = document.getElementsByClassName('checkbox');
+        for (var i = 0; i < items.length; i++){
+            if (items[i].type == 'checkbox')
+                items[i].checked = true;
+        }
+    }
+
+    function UnSelectAll1() {
+        var items = document.getElementsByClassName('checkbox');
+        for (var i = 0; i < items.length; i++){
+            if (items[i].type == 'checkbox')
+                items[i].checked = false;
+        }
+    }
+
+	</script>	
+	<link rel="stylesheet" href="/public_html/css/fonts/css/font-awesome.min.css">
+</head>
+<body>
+	<!--<div class="header_bg">-->
+		<div class="container">
+			<div class="row header">
+				<div class="logo navbar-left">
+					<h1><a href="index.html">Facebook Album Downloader </a></h1>
+				</div>
+				<div class="h_search navbar-right">
+					<form>
+						<!--<a href="../resources/views/Album.blade.php">Login</a>-->		
+						<a href="/logout" class="btn btn-danger">Logout</a>
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!--</div>-->
+		<div class="container">
+			<div class="row h_menu">
+				<nav class="navbar navbar-default navbar-left" role="navigation">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+						<li class="active"><a href="/album">Home</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+					<!-- start soc_icons -->
+				</nav>
+				
+			</div>
+		</div>
+</body>		
+</html>
